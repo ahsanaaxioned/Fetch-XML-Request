@@ -7,112 +7,262 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   
+   /* HTML5 display-role reset for older browsers */
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   
+   /* Force scrollbar */
+   html {
+     overflow-y: scroll;
+   }
+   
+   /* Align radios and text inputs with their label */
+   
+   input[type='radio'] {
+     vertical-align: text-bottom;
+   }
+   
+   /* Hand cursor on clickable input elements */
+   label,
+   input[type='button'],
+   input[type='submit'],
+   button {
+     cursor: pointer;
+   }
+   
+   strong {
+     font-weight: bold;
+     font-family: inherit;
+     font-size: inherit;
+   }
+   
+   em {
+     font-style: italic;
+   }
+   
+   img {
+     width: 100%;
+     border: 0;
+     vertical-align: middle;
+   }
+   
+   sub,
+   sup {
+     vertical-align: baseline;
+     position: relative;
+     font-size: 55%;
+     line-height: 0;
+   }
+   
+   sup {
+     top: -.7em;
+   }
+   
+   sub {
+     bottom: -.25em;
+   }
+   
+   /* 1.2. Clear Fix
+      ========================== */
+   
+   .cf:before,
+   .cf:after {
+     display: table;
+     content: " ";
+   }
+   
+   .cf:after {
+     clear: both;
+   }
+   
+   .cf {
+     *zoom: 1;
+   }
+   
+   /*for all*/
+   body {
+     box-sizing: border-box;
+     font-family: sans-serif;
+   }
+   
+   a {
+     display: inline-block;
+     text-decoration: none;
+   }
+   
+   li {
+     display: inline-block;
+     list-style-type: none;
+   }
+   
+   /*for wrapper*/
+   .wrapper {
+     max-width: 1360px;
+     width: 86%;
+     margin: 0 auto;
+   }
+   
+   /*=================================
+     main styling starts here
+   =================================*/
+   h1 {
+     margin: 30px auto;
+     font-size: 30px;
+     font-weight: 600;
+     text-align: center;
+     text-transform: capitalize;
+   }
+   
+   .btn{ text-align: center; }
+   
+   .btn-more {
+     padding: 10px;
+     border: 2px solid transparent;
+     border-radius: 8px;
+     color: #fff;
+     background-color: #1c1c1c;
+     font-size: 25px;
+     text-transform: capitalize;
+   }
+   
+   .btn-more:hover{
+     border: 2px solid #1c1c1c;
+     background-color: #fff;
+     color: #1c1c1c;
+   }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* Force scrollbar */
-html { overflow-y: scroll; }
-
-/* Align radios and text inputs with their label */
-
-input[type='radio'] { vertical-align: text-bottom; }
-
-/* Hand cursor on clickable input elements */
-label,
-input[type='button'],
-input[type='submit'],
-button {
-  cursor: pointer;
-}
-
-strong {
-  font-weight: bold;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-em { font-style: italic; }
-
-img {
-  width: 100%;
-  border: 0;
-  vertical-align: middle;
-}
-
-sub,
-sup {
-  vertical-align: baseline;
-  position: relative;
-  font-size: 55%;
-  line-height: 0;
-}
-
-sup { top: -.7em; }
-sub { bottom: -.25em; }
-
-/* 1.2. Clear Fix
-   ========================== */
-
-.cf:before,
-.cf:after {
-  display: table;
-  content: " ";
-}
-
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
-
-/*for all*/
-body {
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-a { 
-  display: inline-block;
-  text-decoration: none; 
-}
-
-li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-/*for wrapper*/
-.wrapper {
-  max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
-}
-/*=================================
-  main styling starts here
-=================================*/
-
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
+   .fetch-list{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   
+   .fetch-item{
+     border-radius: 10px;
+     margin: 15px auto;
+     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+     flex-basis: 44%;
+     text-align: center;
+   }
+   .heading{
+     padding: 12px;
+     display: inline-block;
+     font-size: 20px;
+   }
+   .title {
+     padding: 26px;
+     font-size: 16px;
+     font-weight: 600;
+   }
+   
+   .discription {
+     padding: 10px 5px;
+     font-size: 15px;
+     line-height: 25px;
+     letter-spacing: 2px;
+   }
+   
+   .btn.btn-hide{ display: none; }
+   /*=================================
+     main styling ends here
+   =================================*/
