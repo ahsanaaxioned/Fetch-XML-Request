@@ -11,18 +11,15 @@ function getData() {
     httpRequest.open('Get', 'https://jsonplaceholder.typicode.com/posts');
     httpRequest.onload = function () {
         data = JSON.parse(this.response)
-        setData(data);
-        fetchCard();
+        fetchCard(data);
     }
     httpRequest.send();
 };
 getData();
 // fetch function end here
 // btn event start here
-function setData(data) {
-    btn.addEventListener("click", fetchCard);
-}
-function fetchCard() {
+btn.addEventListener("click", fetchCard);
+function fetchCard(data) {
     for (i; i < counter; i++) {
         if (i == 99) {
             btn.classList.add("btn-hide");
