@@ -19,7 +19,7 @@ getData();
 // fetch function end here
 // btn event start here
 btn.addEventListener("click", fetchCard);
-function fetchCard(data) {
+function fetchCard() {
     for (i; i < counter; i++) {
         if (i == 99) {
             btn.classList.add("btn-hide");
